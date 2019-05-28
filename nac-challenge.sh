@@ -1,4 +1,4 @@
-onfs do script
+confs do script
 # Onde, DIR_ORIG  o diretorio a ser backupeado e DIR_DEST  o 
 # diretorio para onde vai o arquivo compactado e BKP_NAME  o nome ao 
 # qual sera compactado o diretorio.
