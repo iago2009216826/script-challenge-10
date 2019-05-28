@@ -1,4 +1,5 @@
-confs do script
+#!/bin/bash
+#confs do script
 # Onde, DIR_ORIG  o diretorio a ser backupeado e DIR_DEST  o 
 # diretorio para onde vai o arquivo compactado e BKP_NAME  o nome ao 
 # qual sera compactado o diretorio.
@@ -10,7 +11,7 @@ mkdir cd /etc/bkp
 DIR_ORIG="cd /etc/bkp"
 DIR_DEST="cd /etc/bkp"
 BKP_NAME="backupthiago.tgz"
-Date=(date '+%d-%m-%y')
+Date=(date "+%d-%m-%y")
 
 # compactacao do diretorio de origem diretamente no diretorio de destino
 tar -czpf ${DIR_DEST}${BKP_NAME} ${DIR_ORIG} ${Date} /etc
@@ -63,7 +64,7 @@ if [ $? == '0' ]; then
 	echo "Falha na execução" >> /var/log/bkp.log
 fi
 
-Date=$(date '+%d-%m-%y')
+Date=$(date "+%d-%m-%y")
 echo "data corrente:$Date"
 exit 0
 
