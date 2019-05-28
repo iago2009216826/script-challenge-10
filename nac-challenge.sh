@@ -68,12 +68,11 @@ echo "data corrente:$Date"
 exit 0
 
 # git-hub
-#yum_install && update git
-#echo "#nac20-rm81182 >> README.md"
-#git init
-#git add script-challenge-10.sh
-#git status
-#git remote add origin https://github.com/iago2009216826/script-challenge-10.git
-#git commit -m "Backup comitado"  
-#git push -u origin master
-
+yum_install && update git -y
+echo "#nac20-rm81182 >> README.md"
+git init
+git add README.md
+git remote add origin https://github.com/iago2009216826/script-challenge-10.git
+git commit -m "Backup comitado"  
+git push -u origin master
+git add nac-challenge.sh
